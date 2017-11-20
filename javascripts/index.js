@@ -1,7 +1,6 @@
 var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
 var diagnostic = document.querySelector('output');
 
-recognition.grammars = speechRecognitionList;
 recognition.continuous = true;
 recognition.interimResults = true;
 recognition.lang = 'pl';
